@@ -9,6 +9,14 @@ a { color: white; }
 .link {
   cursor: pointer;
 }
+
+li:after {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .showcase::after {
   content: '';
   height: 100vh;
