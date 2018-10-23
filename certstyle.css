@@ -24,7 +24,7 @@ a { color: white; }
     column-gap: 1em;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px;
+    padding: 1.5em;
 }
 
 .courseImg > a > img {
@@ -35,16 +35,24 @@ a { color: white; }
 }
 
 .navbar {
-    width: 100%;
+    width: 70em;
     display: grid;
     grid-template-columns: 80% 20%;
     column-gap: 1em;
+    margin: auto;
+    border: 1px solid white;
 }
 
 .navbar .navTitle {
     padding-left: 1em;
     align-self: center;
 }
+
+.navbar .navMenu {
+    padding-right: 2em;
+    justify-content: left;
+}
+
 .navMenu > ul {
    display: flex;
    float: right;
@@ -53,6 +61,14 @@ a { color: white; }
 
 .navMenu > ul > li {
     padding: 10px;
+}
+
+.courseDetails > ul {
+  list-style-type: circle;
+}
+
+.courseDetails > ul > li {
+    width:30rem;
 }
 
 .courseTitle {
@@ -83,13 +99,23 @@ a { color: white; }
 
 
 @media (max-width: 560px) {
+    .container {
+        width:50em;
+    }
     .course {
         grid-template-columns: 1fr;
-        row-gap: 1rem;
+        row-gap: 1em;
+        padding: 1.5em;
+        width: 40em;
     }
     
     .navbar {
+        width: 50em;
         grid-template-columns: 50% 50%;
+    }
+
+    .navbar .navMenu {
+       padding-left: 1.5em;
     }
 }
  
